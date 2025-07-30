@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: prueba-concepto-api
+    env: python
+    buildCommand: ""
+    startCommand: ./start.sh
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: SUPABASE_URL
+        value: YOUR_SUPABASE_DB_URL
+      - key: SECRET_KEY
+        value: YOUR_SECRET_KEY
